@@ -54,7 +54,7 @@ main{
     font-size: 19pt;
     font-weight: lighter;
     background: var(--main-semana-bg-color);
-    margin-top: 5px;
+    margin-top: 4px !important;
     margin-left: 5px;
     border: none;
 }
@@ -64,7 +64,7 @@ main{
     font-size: 21pt;
     font-weight: lighter;
     text-align: left;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 5px;
 }
 span{

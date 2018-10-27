@@ -2,7 +2,7 @@
     /* fds variables */
     --main-fds-bg-color: "";
     --main-x-fds-value:10%;
-    --main-y-fds-value:15%;   
+    --main-y-fds-value:40%;   
     --image-fds: "";
 
     /* fds constants */
@@ -39,7 +39,7 @@
 /* this spacer fills the image size (if not here, 
 the sequence code would be ON the image */
 .spacer{
-    padding-bottom: calc(var(--fds-image-size) - 7px);
+    padding-bottom: calc(var(--fds-image-size) - 11px);
 }
 
 /* contains weekday, month and year */
@@ -57,16 +57,17 @@ the sequence code would be ON the image */
 .spacer2{
     float: right !important;
     background-color: #3d3d3d;
-    height: calc(var(--space-items)*2.5);
+    height: calc(var(--space-items)*2.1);
     padding-left:30px;
     padding-right:35px;
+    padding-top: 8px;
 }
 .year{
     color: white;
     font-size: 21pt;
     font-weight: lighter;
     text-align: left;
-    margin-top: -2px;
+    margin-top: 0px;
     margin-left: 5px;
     float: right !important;
 }

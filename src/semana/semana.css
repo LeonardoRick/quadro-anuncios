@@ -26,7 +26,7 @@
 /* this spacer fills the image size (if not here, 
 the sequence code would be ON the image */
 .spacer{
-    padding-bottom: calc(var(--image-size) - 4px);
+    padding-bottom: calc(var(--image-size) - 8px);
 }
 
 /* top part of the page wich contains the image*/
