@@ -1,0 +1,169 @@
+*{
+    /* indic variables */
+    --main-indic-bg-color: #354269;
+    --main-x-indic-value:10%;
+    --main-y-indic-value:15%;   
+
+
+    /* indic constants */
+    --std-grey: #979594;
+    --dark-grey: #50504f;
+    --bg-img-indic: var(--image-indic);
+    --indic-image-size: calc(var(--image-size)*0.7);
+    --space-sub-top: 120px;
+    --week-height: 120px; /* varible that chages week sizes */
+
+    /* indic image imports */
+    --image-indic: url("../../imagens/indic-sound.jpg");
+    --assistance-logo: url("../../imagens/assistance-logo-black.png");
+    font-size: calc(var(--std-font-size)*0.8);
+    
+}
+/* top part of the page wich contains the image*/
+.top{
+    height: 80px;
+    max-height: 400px;
+    background-color: var(--main-indic-bg-color);
+    margin-top: -31px;
+
+}
+.image{
+    background-image: var(--bg-img-indic);
+    background-position: var(--main-x-indic-value) var(--main-y-indic-value);
+    height: var(--indic-image-size);
+    width: 100%;
+    display:inline-block;
+    margin-top: -45px;
+    margin-bottom:10px;
+    z-index: 20;
+}
+
+/* this spacer fills the image size (if not here, 
+the sequence code would be ON the image */
+.spacer{
+    padding-bottom: calc(var(--indic-image-size) - 12px);
+}
+
+/* contains weekday, month and year */
+.sub-top{
+    background-color: var(--main-indic-bg-color);
+    height: calc(var(--space-items)*2.25);
+    border-left: 10px solid #3d3d3d;
+    
+}
+.sub-top:hover{
+    filter: brightness(85%);  
+}
+.text-sub-top{
+    float:left;
+    color: white;
+    font-size: 19pt;
+    font-weight: lighter;
+    background: var(--main-semana-bg-color);
+    margin-top: 10px;
+    border: none;
+    padding-left: calc(var(--space-sub-top)/2);
+    padding-right: calc(var(--spacesub-top)/2);
+}
+/* take off the padding-left of the first element on sub-top */
+.first{
+ padding-left: 10px;   
+}
+
+.icon{
+    float: left;
+    height: calc(var(--space-items)*1.75);
+    padding-top: calc(var(--space-items)*0.6);
+    padding-left: calc(var(--space-sub-top)/2);
+    padding-right: calc(var(--spacesub-top)/2);  
+}
+/* refactor some letters on sub-top to be little */
+.small{
+    margin-top:20px;
+    float:left; 
+    font-size: 100%;
+    padding-left: 0px;
+}
+/* better position mic icons */
+.mic{
+    margin-top: -3px !important;
+}
+/* ********************* end of header ********************* */
+.week{
+    height: var(--week-height);
+    border-bottom: 5px solid var(--main-indic-bg-color);
+}
+.item{
+    display: inline-block;
+}
+.dayOut{
+    display: inline-block;
+    
+}
+.first-day{
+   margin-left: -388px; 
+}
+
+.day{
+    display: inline-block;
+    text-align: left !important;
+    --day-height: 20px;
+    color: white;
+    
+}
+.dayIn{
+    --width-day: 70px;
+    display: inline-block;
+    width: var(--width-day) !important;
+    max-width: var(--width-day) !important;
+    min-width: var(--width-day) !important;
+
+    margin-top: calc(((var(--week-height)/2) - (var(--day-height)/2)));
+    height: var(--day-height);
+    background: var(--main-indic-bg-color);
+    padding-left:29px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+.firstSpan{
+    padding-left: 10px;
+}
+
+.indicadores{
+    width: 210px;
+    align-content: center !important;
+    text-align:center;
+}
+.assistencia{
+    text-align: left; 
+    width: 100px;
+}
+.field-assis{
+    width: 50%;
+    margin-left: 25%;
+    border-bottom: 3px solid var(--std-grey);
+}
+.mesa{
+    text-align: center;
+    width: 110px;
+}
+
+.palco{
+    text-align: center;
+    margin-left: 12px;
+    width: 120px;
+}
+
+.micro1{
+    text-align: center;
+    margin-left: -5px;
+    width: 100px;
+}
+
+.micro2{
+    text-align: center;
+    margin-left: 5px;
+    width: 100px;
+}
+
+

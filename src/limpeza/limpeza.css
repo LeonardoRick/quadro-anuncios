@@ -1,0 +1,153 @@
+*{
+    font-family: Gotham Light;
+    font-weight: bold;
+    font-size: 21px;
+    /* limp variables */
+    --main-limp-bg-color: #354269;
+    --main-x-limp-value:10%;
+    --main-y-limp-value:15%;   
+    --image-limp: url("../../imagens/cleaning.jpg");
+
+    /* limp constants */
+    --std-grey: #979594;
+    --dark-grey: #50504f;
+    --bg-img-limp: var(--image-limp);
+    --limp-image-size: calc(var(--image-size)*0.7);
+    --lines-clean: 30px;
+    --width-3-items: 32%;
+    --space-lines: 0px;
+    --increment-lines: 13px;
+    
+}
+input{
+    font-weight: bold;
+}
+/* top part of the page wich contains the image*/
+.top{
+    height: 80px;
+    max-height: 400px;
+    background-color: var(--main-limp-bg-color);
+    margin-top: -31px;
+
+}
+.icon{
+    transform: scaleX(-1);
+    position: absolute;
+    height: calc(var(--space-items)*2.5);
+    margin-left: 570px;
+    margin-top: -115px;
+}
+.image{
+    background-image: var(--bg-img-limp);
+    background-position: var(--main-x-limp-value) var(--main-y-limp-value);
+    height: var(--limp-image-size);
+    width: 100%;
+    display:inline-block;
+    margin-top: -45px;
+    margin-bottom:10px;
+}
+
+/* this spacer fills the image size (if not here, 
+the sequence code would be ON the image */
+.spacer{
+    padding-bottom: calc(var(--limp-image-size) - 8px);
+}
+
+/* contains weekday, month and year */
+.sub-top{
+    background-color: var(--main-limp-bg-color);
+    height: calc(var(--space-items)*2.25);
+    border-left: 15px solid #3d3d3d;
+    
+}
+
+.sub-top:hover{
+    filter: brightness(85%);
+}
+/* works like a background of the year */
+.spacer2{
+    float: right !important;
+    background-color: #3d3d3d;
+    height: calc(var(--space-items)*2.25);
+    padding-left:30px;
+    padding-right:35px;
+}
+.year{
+    color: white;
+    font-size: 21pt;
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 5px;
+    float: right !important;
+}
+.h3{
+    color: white;
+    align-content: center;
+    background-color: var(--main-limp-bg-color);
+    margin-top: var(--lines-clean);
+    height: calc(var(--lines-clean)*1.3);
+    border-left: 15px solid #3d3d3d;
+}
+.h3:hover{
+    filter: brightness(85%);
+}
+.item-h3{
+    display: inline-block;
+    margin-top: 5px !important;
+}
+.left-item{
+    width: var(--width-3-items);
+    padding-left: 5px;
+}
+.center-item{
+    width: var(--width-3-items);
+    text-align: center;
+}
+.right-item{
+    width: calc(var(--width-3-items));
+    text-align: right;
+}
+.line{
+ 
+    height: var(--lines-clean);
+    margin-top: 10px;
+}
+.day{
+    display: inline-block;
+    width: var(--width-3-items);
+    align-content: center;
+}
+.day-intern{
+    width: 30px;
+}
+.left-day{
+    text-align: right;
+    margin-left: 15px;
+}
+.semanal-toggle:hover{
+    
+    color: grey;
+}
+.semanalOut{
+    padding-left: 20px;
+}
+.semanal{
+    font-size: 85%;
+    font-style: italic;
+}
+.name{
+    display: inline-block;
+    margin-left: 0px;
+    width: calc(var(--width-3-items));
+    align-content: center;
+}
+.name-group{
+    width: calc(var(--width-3-items)*3);
+    margin-left:10px;
+}
+.left-intern{
+    margin-right: 50px;
+
+}
+

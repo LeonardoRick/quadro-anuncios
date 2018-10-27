@@ -1,0 +1,125 @@
+/* ALTERNAÇÃO DE ARQUIVOS:
+REUNIÃO DE SEMANA:
+--clique no menu "NOSSA VIDA CRISTÃ" para retirar o discurso de baixo e fazer a reunião ter apenas uma parte antes do estudo de livro
+
+REUNIÃO DE FDS:
+--clique no sub-menu onde está escrito o dia da semana para alternar entre 4 e 5 reuniões
+--clique duas vezes em cada tema de discurso para semanas especiais como congressos e assembleias (só aparecerá o tema) 
+
+INDICADORES
+--cloque no sub menu onde está escrito o dia da semana, para retirar uma semana
+*/
+
+*{
+    /*global constants*/
+    font-family: Gotham Light;
+    font-style: normal;
+     
+
+    --main-a4-height: 37cm;
+    --main-a4-width: 25cm;
+    --space-items: 20px;  /*variable that changes to fill the sheet */
+    --min-input-width: 8px;
+    --std-font-size: 12.5pt;  
+    
+    --image-size:230px;
+}
+body{
+    margin: 0.4cm;
+    margin-left:0.4cm;
+    
+}
+
+main{
+    
+    margin-top:-45px;
+    height: var(--main-a4-height);
+    max-height: var(--main-a4-height);
+    min-height: var(--main-a4-height);
+    
+    width: var(--main-a4-width);
+    max-width: var(--main-a4-width);
+    min-width: var(--main-a4-width);
+}
+.titulo_principal{
+    color: white;
+    text-align: center;
+    font-size: 35pt;
+    padding:20px;
+    padding-bottom: 0px;
+}
+
+.date{
+    color: white;
+    font-size: 19pt;
+    font-weight: lighter;
+    background: var(--main-semana-bg-color);
+    margin-top: 5px;
+    margin-left: 5px;
+    border: none;
+}
+
+.month{
+    color: white;
+    font-size: 21pt;
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+span{
+    min-width: var(--min-input-width)!important;
+    max-width: var(--main-a4-width) !important;
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+}
+input{
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(32, 67, 184);
+}
+.input-bind{
+    display: block;
+    overflow: hidden;
+}
+
+/* start of properties from index.html */
+#logo{
+    margin: 20px;
+    display: block;
+}
+#form{
+    margin: 30px;
+    background: #979594;
+    display: flex;
+    width:fit-content;
+    align-items: center;
+    justify-content:center;
+}
+.form-label{
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 20px;
+    display: table-cell;
+    
+}
+.form-input{
+    display: inline-block;
+    margin: 20px;
+}
+
+.link{
+    color: black;
+    margin:20px;
+    display:inline;
+}
+.logo-title{
+    position: relative;
+    margin: 20px;
+}
+
