@@ -1,0 +1,161 @@
+*{
+    /* fds variables */
+    --main-fds-bg-color: "";
+    --main-x-fds-value:10%;
+    --main-y-fds-value:40%;   
+    --image-fds: "";
+
+    /* fds constants */
+    --std-grey: #979594;
+    --dark-grey: #50504f;
+    --bg-img-fds: var(--image-fds);
+    --fds-image-size: calc(var(--image-size)*0.7);
+    
+}
+/* top part of the page wich contains the image*/
+.top{
+    height: 80px;
+    max-height: 400px;
+    background-color: var(--main-fds-bg-color);
+    margin-top: -31px;
+
+}
+.icon{
+    position: absolute;
+    height: calc(var(--space-items)*1.75);
+    margin-left: 605px;
+    margin-top: -115px;
+}
+.image{
+    background-image: var(--bg-img-fds);
+    background-position: var(--main-x-fds-value) var(--main-y-fds-value);
+    height: var(--fds-image-size);
+    width: 100%;
+    display:inline-block;
+    margin-top: -45px;
+    margin-bottom:10px;
+}
+
+/* this spacer fills the image size (if not here, 
+the sequence code would be ON the image */
+.spacer{
+    padding-bottom: calc(var(--fds-image-size) - 11px);
+}
+
+/* contains weekday, month and year */
+.sub-top{
+    background-color: var(--main-fds-bg-color);
+    height: calc(var(--space-items)*2.25);
+    border-left: 30px solid #3d3d3d;
+    
+}
+
+.sub-top:hover{
+    filter: brightness(85%);
+}
+/* works like a background of the year */
+.spacer2{
+    float: right !important;
+    background-color: #3d3d3d;
+    height: calc(var(--space-items)*2.1);
+    padding-left:30px;
+    padding-right:35px;
+    padding-top: 8px;
+}
+.year{
+    color: white;
+    font-size: 21pt;
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 5px;
+    float: right !important;
+}
+.month{
+    float: right;
+    padding-right: 10px;
+}
+.spacer-fds{
+    display: inline-block;
+}
+/* line that split boxes of weeks */
+.separator{
+    width: 100%;
+    height: 5px;
+    background-color: var(--main-fds-bg-color);
+}
+/* first separator that combines with subtop */
+.first{
+    margin: 0 auto;
+    border-left: 30px solid #3d3d3d;
+    height:5px !important;
+}
+/* date that appers on top of code block */
+.day{
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: calc(var(--std-font-size)*1.5);
+}
+.day_intern{
+    display: inline-block;
+    background-color: var(--main-fds-bg-color);
+    border-top: 4px solid var(--std-grey);
+    padding: 5px;
+}
+
+/* subject of the speach */
+.tema{
+    text-align: center;
+    margin-left: calc(var(--space-items)*2.5);
+    font-size: calc(var(--std-font-size)*1.2);
+    margin-bottom: calc(var(--space-items)*1);
+    max-width: 90%;
+    margin-top: 5px;
+    padding-bottom: 0px;
+}
+/* works like a background of the meeting week day */
+.tema_intern{
+    background: var(--std-grey);
+    padding: 4px;
+}
+
+/* make all items look like lists with the list-ball before */
+.item::before{
+    content: "⬤⠀";
+    color: var(--dark-grey);
+    font-size: calc(var(--std-font-size)*0.7);
+}
+.item{
+    color: black;
+    font-size: calc(var(--std-font-size)*1.1);
+    margin-bottom:calc(var(--space-items)/2);
+}
+
+/* left side code block */
+.left{
+    display: inline-block;
+    max-width: calc(var(--space-items)*22);
+    min-width: calc(var(--space-items)*22);
+    margin-left: calc(var(--space-items)*3);
+    margin-right: calc(var(--space-items)*2);
+    border-right: 3px solid var(--std-grey);
+
+    max-height: calc(var(--space-items)*5) !important;
+    min-height: calc(var(--space-items)*5) !important;
+}
+
+/* sets Orador e Presidente to have bigger font size */
+.big{
+    font-size: calc(var(--std-font-size)*1.3);
+}
+
+/* right side code block */
+.right{
+    display: inline-block;
+    margin-right: calc(var(--space-items));
+}
+/* space between weeks */
+.end{
+    height: 4px;
+}

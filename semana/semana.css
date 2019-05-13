@@ -1,0 +1,172 @@
+*{
+    /* week variables */
+    --image-week: "";    
+    --main-week-bg-color:  "";
+    --main-x-week-value:10%;
+    --main-y-week-value:30%;
+
+    /* week constants */
+    --std-dot-color: #2c5274;
+    --treasure-color:  #979594;
+    --preaching-color: #b9752b;
+    --christian-color: #961728;
+    --bg-img-week: var(--image-week);
+    
+}
+.image{
+     /* sempre mudar o .spacer quando mudar aqui. paddim-bottom = --image-size - 1px; */
+    background-image: var(--bg-img-week);
+    background-position: var(--main-x-week-value) var(--main-y-week-value);
+    height: var(--image-size);
+    width: 100%;
+    display:inline-block;
+    margin-top: -45px;
+    margin-bottom:10px;
+}
+/* this spacer fills the image size (if not here, 
+the sequence code would be ON the image */
+.spacer{
+    padding-bottom: calc(var(--image-size) - 8px);
+}
+
+/* top part of the page wich contains the image*/
+.top{
+    height: 80px;
+    max-height: 400px;
+    background-color: var(--main-week-bg-color);
+    margin-top: -31px;
+
+}
+/* contains date and week text */
+.sub-top{
+    background: var(--main-week-bg-color);
+    height: calc(var(--space-items)*2);
+    border-left: 30px solid #3d3d3d;
+}
+
+/* works like a background of the year */
+.spacer2{
+    float: right;
+    background-color: #3d3d3d;
+    height: calc(var(--space-items)*2);
+    padding-left:30px;
+    padding-right:35px;
+}
+.year{
+    color: white;
+    font-size: 21pt;
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+/* every single line of speaches */
+.item{
+    font-size: var(--std-font-size);
+    margin-top: var(--space-items);
+    font-style: Gotham Book;
+    font-weight: bold;
+}
+/* dot that cames before .item */
+.item::before{
+    content: "⬤ ⠀";
+    padding-left: 35px;
+    margin-top: var(--space-items);
+}
+/* setting relative colors for each section */
+.i_standard{
+    color: var(--std-dot-color);
+}
+.i_treasure{
+    color: var(--treasure-color);
+}
+.i_preaching{
+    color: var(--preaching-color);
+}
+.i_christian{
+    color: var(--christian-color);
+}
+.item_txt{
+    color: black;
+    font-size: var(--std-font-size);
+    min-width: 0px;  /* this is only if it is empty */
+    width:auto; 
+}
+/* time shows italic */
+.time{
+    color: black;
+    font-style: italic;
+}
+
+/* .workers and .speach configure input styles */
+.workers{
+    font-family: Gotham;
+    font-weight: bold;
+
+}
+
+/* rectangle that split sections of the meeting */
+.div{
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin-top:5px; 
+}
+/* setting relative colors for each section */
+.div_treasure{
+    background-color: #979594;
+}
+.div_preaching{
+    background-color: var(--preaching-color);
+}
+.div_christian{
+    background-color: var(--christian-color);
+}
+.div_christian:hover{
+    filter: brightness(85%);
+}
+
+/* sets a big space to the line that contains the split */
+.double{
+    padding-bottom: var(--space-items);
+    display: inline-block;
+    margin-top: calc(var(--space-items)/2);
+}
+
+/* draw the conector of A and B */
+.conector{
+    
+    display: inline-block;
+    padding-bottom:calc(var(--space-items)*1.5);
+    padding-top: calc(var(--space-items)*1);
+    margin-bottom:calc(var(--space-items)*-1);
+    width: 50px;
+    border-left: 2.5px solid black;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+/* line A */
+.line1{
+    float: right;
+    margin-left: calc(var(--space-items)/2);
+    margin-top: calc(var(--space-items)*-0.5)
+
+    
+}
+/* makes a and b be far away from each other */
+br
+{   content: "" !important;
+    display: block !important;
+    margin-bottom: calc(var(--space-items)*1.5); 
+}
+
+
+/* div to put some space above "Faça seu melhor... " subtitle */
+.spacer3{
+    margin-top:calc(var(--space-items)*0.7);
+}
+
+.spacer4{
+    margin-top: calc(var(--space-items)*2);
+}
