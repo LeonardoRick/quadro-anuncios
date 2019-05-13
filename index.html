@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quadro de Anúncios</title>
+    <link rel="stylesheet" href="./standard.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./teste.css">
+</head>
+
+<body>
+    <img id="logo" src="../imagens/logo.png" alt="logotipo jw.org" id="logo">
+    <h1 class="logo-title">Quadro de Anúncios</h1>
+    <form id="form">
+        <div>
+            <label class="form-label">URL imagem FDS:</label>
+            <input class="form-input" type="url" id="fds-bg-image" />
+            <label class="form-label">Cor de fundo FDS: </label>
+            <input class="form-input" type="text" id="fds-bg-color">
+        </div>
+
+        <div>
+            <label class="form-label">URL imagem Semana: </label>
+            <input class="form-input" type="url" id="week-bg-image" />
+            <label class="form-label">Cor de fundo Semana: </label>
+            <input class="form-input" type="text" id="week-bg-color">
+        </div>
+        <div>
+            <label class="form-label">Incremento do Mês: </label>
+            <input class="form-input" type="number" id="plus-month">
+        </div>
+        <input class="form-input" type="submit" value="Salvar" id="btSalvar" onclick="send();" />
+    </form>
+
+
+    <ul>
+        <li><a class="link" href="./indicadores/indicadores.html">Indicadores</a></li>
+        <br>
+        <li><a class="link" href="./limpeza/limpeza.html" target="_blank">Limpeza</a></li>
+        <br>
+        <li><a class="link" href="./fds/reuniao-fds.html" target="_blank">Reunião FDS</a></li>
+        <br>
+        <li><a class="link" href="./semana/reuniao-semana.html" target="_blank">Reunião Semana</a></li>
+        <br>
+        <li><a class="link" href="./semana/reuniao-semana1.html" target="_blank">Reunião Semana 1</a></li>
+        <br>
+        <li><a class="link" href="./semana/reuniao-semana2.html" target="_blank">Reunião Semana 2</a></li>
+        <br>
+        <li><a class="link" href="./semana/reuniao-semana-visita.html" target="_blank">Reunião Semana Visita</a></li>
+        <br>
+    </ul>
+
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./standard.js"></script>
+<script src="./fds/fds.js"></script>
